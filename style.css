@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #696969;
+}
+
+header img{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.About{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    background-color: #696969;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.About hr{
+    padding: 1px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 3px;
+    margin-left: 0;
+}
+
+.gameModes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gameModes a{
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    margin: 10px;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px 2px grey;
+}
+
+.gameModes a img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.gameModes a div{
+    background-color: black;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.gameModes a:hover{
+    transition: .3s;
+    border: 3px solid orange;
+    box-shadow: 1px 1px 2px 2px orange;
+    color: grey;
+}
+
+main .text{
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    font-size: 22px;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+}
+
+main p{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 22px;
+    background-color: grey;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+p a:hover{
+    color: orange;
+    transition: .2s;
+}
+
+.trailer-text{
+    background: linear-gradient(0.25turn, #ebf8e1, grey, #ebf8e1);
+}
+
+.video-container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+
+.tank-explosion-animation-container .tank, .tank-explosion-animation-container .explosion{
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 125px;
+    max-height: 200px;
+}
+
+.tank-explosion-animation-container .tank{
+    transform: rotateY(180deg);
+}
+
+.tank-explosion-animation-container .explosion{
+    transform: translate(-115%, 14%);
+    animation-name: ExplosionVisibility;
+    animation-duration: 1.75s;
+    animation-iteration-count: infinite;
+}
+
+.tank-explosion-animation-container{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+@keyframes ExplosionVisibility {
+    from {opacity: 0;}
+    to {opacity: 1;} 
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    font-size: 25px;
+    background-color: #696969;
+    color: red; /*más szín*/
+}
+
+
+
+@media screen and (max-width: 815px) {
+    .gameModes a{
+        margin-top: 40px;
+    }
+}
